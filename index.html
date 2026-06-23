@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agrinho 2026 - Agronegócio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <header>
+    <h1>🌱 Agrinho 2026 - Agronegócio</h1>
+    <p>Conectando o campo à cidade</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSecao('inicio')">Início</button>
+    <button onclick="mostrarSecao('importancia')">Importância</button>
+    <button onclick="mostrarSecao('tecnologia')">Tecnologia</button>
+    <button onclick="mostrarSecao('quiz')">Quiz</button>
+  </nav>
+
+  <main>
+
+    <section id="inicio" class="secao ativa">
+      <h2>O que é o Agronegócio?</h2>
+      <p>
+        O agronegócio é o conjunto de atividades econômicas relacionadas à produção agrícola,
+        pecuária, indústria e distribuição de produtos do campo até a cidade.
+      </p>
+    </section>
+
+    <section id="importancia" class="secao">
+      <h2>Importância</h2>
+      <ul>
+        <li>Geração de empregos</li>
+        <li>Produção de alimentos</li>
+        <li>Fortalecimento da economia</li>
+        <li>Sustentabilidade no campo</li>
+      </ul>
+    </section>
+
+    <section id="tecnologia" class="secao">
+      <h2>Tecnologia no Campo</h2>
+      <p>
+        Hoje o agronegócio utiliza drones, inteligência artificial, sensores e máquinas modernas
+        para aumentar a produção e reduzir impactos ambientais.
+      </p>
+      <button onclick="mostrarFato()">Mostrar curiosidade</button>
+      <p id="fato"></p>
+    </section>
+
+    <section id="quiz" class="secao">
+      <h2>Quiz rápido</h2>
+      <p>O agronegócio envolve apenas a produção agrícola?</p>
+      <button onclick="responder(true)">Sim</button>
+      <button onclick="responder(false)">Não</button>
+      <p id="resultado"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto Agrinho 2026 - Desenvolvido para educação</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
